@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Interactive Rating Component</title>
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div id="main-component">
+    <img src="./images/icon-star.svg" alt="star" id="star-image">
+
+    <h1 class="title">How did we do?</h1>
+
+    <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+
+    <div id="vote">
+      <div class="rating-number">1</div> 
+      <div class="rating-number">2</div>
+      <div class="rating-number">3</div>
+      <div class="rating-number">4</div>
+      <div class="rating-number">5</div>
+    </div>
+
+    <button id="submit">Submit</button>
+  </div>
+  
+
+
+  <!-- Rating state end -->
+  <div id="thank-you-component" class="hidden">
+    <img src="./images/illustration-thank-you.svg" alt="thank you image" id="thank-you-image">
+    
+    <p id="selected-rating">You selected <span id="rating"></span> out of 5</p>
+
+    <h1 id="thank-you">Thank you!</h1>
+
+    <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
